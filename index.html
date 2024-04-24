@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie Age Limits" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="Niko" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./ff/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./ff/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./ff/favicon-16x16.png" />
+    <link rel="manifest" href="./ff/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie Age Limits</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <!-- references javascript file -->
+    <script src="./js/script.js"></script>
+    <h1>Movie Age Limits</h1>
+     <img src="" alt="" width="600" height="300" />
+    <h3>Enter your age:</h3>
+    <p>
+      <!-- form to get user input for their age -->
+      <form action="javascript:ageLimit()">
+        <label for="age">Age: </label>
+        <input type="number" step="1" id="age" placeholder="Age" min="0" /><br><br>
+        <input type="submit" value="Enter">
+      </form>
+    </p>
+		<!-- Create a space where the user information will be displayed -->
+    <div id="user-info"></div>
+ 
+    <br>
   </body>
 </html>
