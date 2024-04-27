@@ -6,8 +6,16 @@
 "use strict"
 //function to see what rating of movies user can watch
 function ageLimit() {
+  
   // get user input and declare it as a variable for their age
   let userAge = document.getElementById("age").value;
+
+  // Check if user input is empty
+  if(userAge === "") {
+    document.getElementById("user-info").innerHTML = "Please enter your age.";
+    return;
+  }
+  
   // if statement to see if user age is above certain age limits for different movie ratings
   if (userAge >= 100) {
     document.getElementById("user-info").innerHTML = "Bruv you are a dinosaur, good luck getting out of that chair my boi. L R.I.P";
